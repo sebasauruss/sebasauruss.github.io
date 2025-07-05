@@ -1,3 +1,4 @@
+/* Responsive Fixes CSS */
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +8,10 @@
   body {
     background-color: #e3c2c2;
     font-family: 'Quicksand', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #d9b8b8 0%, #e9cfcf 100%);
+    padding: 40px;
+    color: #2f2f2f;
   }
   
   header {
@@ -50,14 +55,6 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   }
   
-  body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #d9b8b8 0%, #e9cfcf 100%);
-    padding: 60px;
-    color: #2f2f2f;
-  }
-
   .about {
     display: flex;
     align-items: flex-start;
@@ -66,7 +63,7 @@
     margin: auto;
     animation: fadeIn 1.8s ease-in-out;
   }
-
+  
   .title {
     font-weight: 900;
     font-size: 48px;
@@ -74,7 +71,7 @@
     color: #1e1e1e;
     animation: slideInLeft 1.5s ease-out;
   }
-
+  
   .card {
     background-color: #fffaf3;
     border-left: 6px solid #964175;
@@ -85,59 +82,29 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: slideInRight 1.5s ease-out;
   }
-
+  
   .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
   }
-
+  
   .card p {
     margin-top: 0;
     margin-bottom: 16px;
     line-height: 1.8;
     font-size: 18px;
   }
-
-  @keyframes fadeIn {
-    from { opacity: 1; }
-    to   { opacity: 2; }
-  }
-
-  @keyframes slideInLeft {
-    from { transform: translateX(-60px); opacity: 1; }
-    to   { transform: translateX(0); opacity: 2; }
-  }
-
-  @keyframes slideInRight {
-    from { transform: translateX(60px); opacity: 1; }
-    to   { transform: translateX(0); opacity: 2; }
-  }
-
-  @media (max-width: 768px) {
-    .about {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .title {
-      font-size: 36px;
-    }
-
-    .card {
-      padding: 30px;
-    }
-  }
-
+  
   .container {
-    margin: 100px 0 0 300px;
+    margin: 100px auto 0;
     width: 70%;
     height: 450px;
     display: flex;
     justify-content: center;
     gap: 10px;
+    flex-wrap: wrap;
   }
-
+  
   .container img {
     width: 10%;
     height: 100%;
@@ -146,25 +113,19 @@
     border: white 2px solid;
     transition: all ease-in-out 0.5s;
   }
-
+  
   .container img:hover {
     width: 25%;
-  }
-
-  body {
-    background-color: #e3c2c2;
-    font-family: 'Quicksand', sans-serif;
-    padding: 40px;
   }
   
   .gallery {
     margin-top: 100px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     justify-items: center;
   }
-
+  
   .gallery-title {
     margin-top: 100px;
     text-align: center;
@@ -172,12 +133,13 @@
     margin-bottom: 30px;
     color: #5a2c3f;
   }
-
+  
   .photo-card {
     background-color: white;
     border: 1px solid #333;
     border-radius: 8px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -243,10 +205,8 @@
     opacity: 1;
   }
   
-
   .letter-container {
-    margin-left: 650px;
-    margin-top: 50px;
+    margin: 50px auto 0;
     background: #fffaf3;
     border: 2px solid #f78ca2;
     border-radius: 16px;
@@ -256,9 +216,8 @@
     text-align: center;
     animation: fadeIn 2s ease;
     position: relative;
-    
   }
-
+  
   .letter-container::before {
     content: "💌";
     font-size: 48px;
@@ -267,36 +226,103 @@
     left: 50%;
     transform: translateX(-50%);
   }
-
+  
   .love-title {
     font-family: 'Dancing Script', cursive;
     font-size: 36px;
     color: #a33247;
     margin-bottom: 20px;
   }
-
+  
   .letter-text {
     font-size: 18px;
     color: #444;
     line-height: 1.7;
     white-space: pre-wrap;
   }
-
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  @media (max-width: 640px) {
-    .letter-container {
-      margin: 20px;
-      padding: 30px 20px;
+  
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
     }
-
+  
+    header h1 {
+      font-size: 36px;
+    }
+  
+    nav {
+      margin-top: 10px;
+    }
+  
+    nav a {
+      margin: 10px;
+      font-size: 16px;
+    }
+  
+    main img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .about {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 30px;
+      padding: 0 20px;
+    }
+  
+    .title {
+      font-size: 32px;
+    }
+  
+    .card {
+      padding: 20px;
+      max-width: 90%;
+    }
+  
+    .gallery {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      padding: 0 20px;
+    }
+  
+    .photo-card {
+      width: 90%;
+    }
+  
+    .container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      height: auto;
+      margin: 50px auto 0;
+      gap: 10px;
+      justify-content: center;
+    }
+  
+    .container img {
+      width: 45%;
+      height: auto;
+    }
+  
+    .container img:hover {
+      width: 45%;
+    }
+  
+    .letter-container {
+      margin: 30px auto;
+      padding: 25px 20px;
+      width: 90%;
+    }
+  
     .love-title {
       font-size: 28px;
     }
-
+  
     .letter-text {
       font-size: 16px;
     }
@@ -305,3 +331,19 @@
   html {
     scroll-behavior: smooth;
   }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideInLeft {
+    from { transform: translateX(-60px); opacity: 1; }
+    to { transform: translateX(0); opacity: 2; }
+  }
+  
+  @keyframes slideInRight {
+    from { transform: translateX(60px); opacity: 1; }
+    to { transform: translateX(0); opacity: 2; }
+  }
+  
