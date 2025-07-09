@@ -88,7 +88,6 @@
   }
   
   .card p {
-    text-align: left;
     margin-top: 0;
     margin-bottom: 16px;
     line-height: 1.8;
@@ -205,6 +204,8 @@
     opacity: 1;
   }
   
+
+
   .letter-container {
     margin: 50px auto 0;
     background: #fffaf3;
@@ -219,7 +220,6 @@
   }
   
   .letter-container::before {
-    content: "💌";
     font-size: 48px;
     position: absolute;
     top: -25px;
@@ -227,6 +227,10 @@
     transform: translateX(-50%);
   }
   
+.letter-layout {
+  display: flex;
+}
+
   .love-title {
     font-family: 'Dancing Script', cursive;
     font-size: 36px;
@@ -235,6 +239,7 @@
   }
   
   .letter-text {
+    text-align: left;
     font-size: 18px;
     color: #444;
     line-height: 1.7;
@@ -313,18 +318,23 @@
       width: 45%;
     }
   
+    .letter-layout {
+      display: table-row;
+    }
+
     .letter-container {
       margin: 30px auto;
-      padding: 25px 20px;
+      padding: 10px 10px;
       width: 90%;
     }
   
     .love-title {
-      font-size: 28px;
+      font-size: 15px;
     }
   
     .letter-text {
-      font-size: 16px;
+      text-align: left;
+      font-size: 11px;
 
     }
   }
