@@ -1,4 +1,4 @@
-* {
+* {* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -217,7 +217,27 @@
     line-height: 1.7;
     white-space: pre-wrap;
   }
+
+  footer{
+    justify-items: end;
+  }
   
+  .music-btn{
+    position: fixed;
+      bottom: 20px;
+      right: 2px;
+      width: 80px;
+      height: 80px;
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .music-btn i {
+    font-size: 2.2rem;
+  }
+
+
   @media (max-width: 768px) {
     header {
       flex-direction: column;
@@ -350,4 +370,5 @@
     from { transform: translateX(60px); opacity: 1; }
     to { transform: translateX(0); opacity: 2; }
   }
+  
   
