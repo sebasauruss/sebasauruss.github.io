@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #e3c2c2;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #d9b8b8 0%, #e9cfcf 100%);
+    padding: 40px;
+    color: #2f2f2f;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+  }
+  
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: #1a1a1a;
+  }
+  
+  nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #bb495e;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+  }
+  
+  main img {
+    max-width: 50%;
+    height: 50%;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    max-width: 1200px;
+    margin: auto;
+    animation: fadeIn 1.8s ease-in-out;
+  }
+  
+  .title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1.1;
+    color: #1e1e1e;
+    animation: slideInLeft 1.5s ease-out;
+  }
+  
+  .card {
+    background-color: #fffaf3;
+    border-left: 6px solid #964175;
+    padding: 40px;
+    max-width: 800px;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideInRight 1.5s ease-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card p {
+    margin-top: 0;
+    margin-bottom: 16px;
+    line-height: 1.8;
+    font-size: 18px;
+  }
+  
+  .container {
+    margin: 100px auto 20px;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    
+  }
+  
+  .container img {
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: white 2px solid;
+    transition: all ease-in-out 0.5s;
+  }
+  
+  .container img:hover {
+    width: 25%;
+  }
+  
+  .gallery {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .gallery-title {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #5a2c3f;
+  }
+
+
+  .baby-gallery-title{
+    margin-top: 50px;
+    text-align: center;
+    color: #5a2c3f;
+  }
+  .baby-gallery {
+    margin: 20px;
+    padding: 20px;
+    perspective: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .flip-card {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+  .flip-card.flipped {
+    transform: rotateY(180deg);
+  }
+  .flip-card img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+    
+  
+  }
+  .flip-card img.back {
+    transform: rotateY(180deg);
+  }
+  
+  
+  .letter-container {
+    margin: 40px auto 0;
+    background: #fffaf3;
+    border: 2px solid #f78ca2;
+    border-radius: 16px;
+    padding: 40px 30px;
+    max-width: auto;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 2s ease;
+    position: relative;
+  }
+  
+  .letter-container::before {
+    font-size: 48px;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+.letter-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  padding: 20px;
+}
+
+
+
+
+  .love-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    color: #a33247;
+    margin-bottom: 20px;
+  }
+  
+  .letter-text {
+    text-align: left;
+    font-size: 18px;
+    color: #444;
+    line-height: 1.7;
+    white-space: pre-wrap;
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    header h1 {
+      font-size: 36px;
+    }
+  
+    nav {
+      margin-top: 10px;
+    }
+  
+    nav a {
+      margin: 10px;
+      font-size: 16px;
+    }
+  
+    main img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .about {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 30px;
+      padding: 0 20px;
+    }
+  
+    .title {
+      font-size: 32px;
+    }
+  
+    .card {
+      padding: 20px;
+      max-width: 90%;
+    }
+  
+    .gallery {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      padding: 0 20px;
+    }
+  
+    .photo-card {
+      width: 90%;
+    }
+  
+    .container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      height: auto;
+      margin: 50px auto 0;
+      gap: 10px;
+      justify-content: center;
+    }
+  
+    .container img {
+      width: 45%;
+      height: auto;
+    }
+  
+    .container img:hover {
+      width: 45%;
+    }
+  
+    .letter-layout {
+      display: table-row;
+    }
+
+    .letter-container {
+      margin: 30px auto;
+      padding: 10px 10px;
+      width: 90%;
+    }
+  
+    .love-title {
+      font-size: 15px;
+    }
+  
+    .letter-text {
+      text-align: left;
+      font-size: 11px;
+
+    }
+
+    .baby-gallery-title{
+      margin-top: 50px;
+      text-align: center;
+      color: #5a2c3f;
+    }
+
+    .baby-gallery {
+      display: grid; 
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      justify-items: center; /
+    }
+
+    .flip-card {
+      width: 120%; 
+      height: auto;
+      aspect-ratio: 3 / 2;
+    }
+  }
+
+    
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideInLeft {
+    from { transform: translateX(-60px); opacity: 1; }
+    to { transform: translateX(0); opacity: 2; }
+  }
+  
+  @keyframes slideInRight {
+    from { transform: translateX(60px); opacity: 1; }
+    to { transform: translateX(0); opacity: 2; }
+  }
+  
