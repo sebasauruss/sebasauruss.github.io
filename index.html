@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -28,7 +29,7 @@
     <div class="title">
       ABOUT<br>KEZIAH
     </div>
-    <div class="card">
+    <div class="card" id="aboutkeziah">
       <p>If I were to describe Keziah in one sentence, I'd say she's like a breath of fresh air—just the thought of them can make you smile even when you're doing nothing.</p>
       <p>I know I haven't been with them personally, but I do know that she can make the people around them laugh—because that's exactly what she's been doing to me.</p>
       <p>She's funny, kind, cute, smart, pretty, caring, loyal, beautiful, and mean to me in a good way.</p>
@@ -90,7 +91,69 @@ function flipCard(id) {
   document.getElementById(id).classList.toggle('flipped');
 }
 </script>
-  
+
+<div class="notes-title">
+    <h1>Little Notes <i class="bi bi-pencil"></i></h1>
+  </div>
+
+<div class="notes-layout">
+<div class="card mb-3">
+  <div class="row g-0" >
+    <div class="col-4">
+      <img src="pictures/note1.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-8">
+      <div class="card-body">
+        <p class="card-text">One of my fav moments, when we were watching together and giving each other lots of cute kisses.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-4">
+      <img src="pictures/note2.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-8">
+      <div class="card-body">
+        <p class="card-text">I’ll never get tired of seeing you smile, laugh, and giggle.(You have the prettiest smile I’ve ever seen.)</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-4">
+      <img src="pictures/note3.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-8">
+      <div class="card-body">
+        <p class="card-text">Someday, going home won’t make me cry—because you’ll be there waiting for me.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-4">
+      <img src="pictures/note4.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-8">
+      <div class="card-body">
+        <p class="card-text">Crazy how an IT student can not use her phone for few days.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
   <div>
     <h2 class="gallery-title">LETTERS <i class="bi bi-envelope-paper-heart-fill"></i></h2>
   </div>
@@ -134,9 +197,9 @@ Seb.
             </div>
       </div>
   
-       <div id="letter" class="letter-container">
+  <div id="letter" class="letter-container">
     <div class="love-title">For My Wabi</div>
-    <div class="letter-text"> 
+      <div class="letter-text"> 
 Dear Keziah,
       
 I want you to know that there’s no one else I want to be with, talk to, call, play with, or imagine my future with. And most of all, there’s no one else I’d rather annoy and make suyo to every single day. I can’t imagine a future without you by my side—crying, smiling, or laughing. Your voice is the one I want to hear every single day.
@@ -239,6 +302,26 @@ Seb
   </div>
 
 
+  <div id="letter" class="letter-container">
+    <div class="love-title">For My Wabi</div>
+    <div class="letter-text"> 
+Happy Valentine’s, Iah ko.
+
+I’m both sad and happy — sad that I can’t be with you on this day, but happy that I have someone like you every day.
+
+If I could describe you as one of our objects in programming, you would be index 0 in my array. An array is where we store a list, and the index is how we access what’s inside it. So if I have a list of: who’s my favorite person, who I love, who I miss, who I want to spend all the holidays and celebrations with, who I want to marry, who I want to see and hear every day, who I think is amazing, who I think is doing their best every day, and who I’m super duper proud of — there would only be one element inside, and the index of the first element is always 0. You are my index 0 to all those questions. You will always be at the top of my list.
+
+Let’s spend a late Valentine’s together when I get back, mahal.
+I love you so much.
+
+From your always Valentine,
+Seb
+💗
+
+14/02/25
+    </div>
+  </div>
+
   </div>
 
 
@@ -248,7 +331,7 @@ Seb
             <i class="bi bi-play"></i>
         </button>
 
-        <audio id="song" src="/Music/naiilang.mp3"></audio>
+        <audio id="song" src="/Music/ang_balikat_at_baywang.mp3"></audio>
       </div>
   </footer>
 
