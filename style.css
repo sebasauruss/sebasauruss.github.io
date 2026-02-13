@@ -1,4 +1,4 @@
-* {* {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -71,7 +71,7 @@
     animation: slideInLeft 1.5s ease-out;
   }
   
-  .card {
+  #aboutkeziah{
     background-color: #fffaf3;
     border-left: 6px solid #964175;
     padding: 40px;
@@ -82,12 +82,12 @@
     animation: slideInRight 1.5s ease-out;
   }
   
-  .card:hover {
+  #aboutkeziah:hover {
     transform: translateY(-5px);
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
   }
   
-  .card p {
+  #aboutkeziah p {
     margin-top: 0;
     margin-bottom: 16px;
     line-height: 1.8;
@@ -126,7 +126,7 @@
   }
   
   .gallery-title {
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
     font-size: 40px;
     margin-bottom: 30px;
@@ -200,6 +200,20 @@
   padding: 20px;
 }
 
+.notes-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+
+.notes-title{
+  text-align: center;
+}
+
+.card {
+  padding: 20px;
+}
 
 
 
@@ -276,9 +290,16 @@
       font-size: 32px;
     }
   
-    .card {
+    #aboutkeziah {
       padding: 20px;
       max-width: 90%;
+      
+    }
+
+    #aboutkeziah p{
+      font-size: smaller;
+      text-align: left;
+
     }
   
     .gallery {
@@ -313,6 +334,27 @@
     .letter-layout {
       display: table-row;
     }
+ 
+    .notes-layout {
+      display: grid;
+    grid-template-columns: 1fr; /* 1 card per row */
+    }
+    .card img {
+      margin-top: 20px;
+      object-fit: cover;
+  }
+  .card-text{
+    font-size: smaller;
+  }
+
+
+
+    
+    .notes-title{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
 
     .letter-container {
       margin: 30px auto;
@@ -331,7 +373,6 @@
     }
 
     .baby-gallery-title{
-      margin-top: 50px;
       text-align: center;
       color: #5a2c3f;
     }
