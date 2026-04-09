@@ -21,7 +21,7 @@
   </header>
 
   <main>
-    <img src="pictures/background1.jpg" alt="Char and Kezi holding hands">
+    <img src="pictures/background2-removebg-preview.png" alt="Char and Kezi holding hands">
   </main>
 
 
@@ -279,7 +279,6 @@ Seb
 01/11/25
     </div>
   </div>
-
   <div id="letter" class="letter-container">
     <div class="love-title">For My Wabi</div>
     <div class="letter-text"> 
@@ -300,8 +299,6 @@ Seb
 19/12/25
     </div>
   </div>
-
-
   <div id="letter" class="letter-container">
     <div class="love-title">For My Wabi</div>
     <div class="letter-text"> 
@@ -322,42 +319,64 @@ Seb
     </div>
   </div>
 
+  <div id="letter" class="letter-container">
+    <div class="love-title">For My Wabi</div>
+    <div class="letter-text"> 
+Hi my baby, ilang days na lang makakabalik na ako. I’ll finally be able to hug you, kiss you, and take care of you again, I’m sososo happy na mabibigyan ulit ako ng chance to do all of that—and this time, hindi lang for 3d2n, but for 6d5n.
+
+Hindi pa nga ako nakakapunta, pero nasasad na agad ako pag iniisip kong aalis din ako after spending 6 whole days with you. I’m also sad na hindi tayo aabot sa motmot natin, but it’s okay—we’ll celebrate it when we’re together. After all, every day feels like our motmot naman, even on the days na hindi tayo okay, because I still feel like I’m the luckiest person na napili mong makasama, maalagaan ka, at mapagsabihan mo ng mga bagay-bagay.
+
+I hope you’re always okay, mahal. And even if hindi ka okay, I want you to know that I’m always here, ready to listen. Sa dami ng rants at kwento na nasabi mo sa akin, ni isa never kong winish na mag-stop ka. In fact, mas hinihiling ko pa na sana hindi ka tumigil magsabi sa akin. Your voice brings me so much comfort, more than you know.
+
+Lastly, I’m so proud of you. I see your efforts, I see how you’ve changed, and I see how you’re taking your time to learn. That’s why I mean all of my “I’m proud of you” sa’yo—because they’re not just something I say to ease your mind, but to make sure you always know that there’s someone who sees what you’ve done, even when you feel like you didn’t do well.
+
+Goodluck sa exam mo, mahal!! I'm already proud of u.
+
+From your biggest supporter,
+Seb & Momay 💗
+
+09/04/26
+
+    </div>
   </div>
 
+  </div>
 
   <footer>
     <div>
         <button onclick="playSong()" class="btn btn-lg music-btn">
             <i class="bi bi-play"></i>
         </button>
-
         <audio id="song" src="/Music/ang_balikat_at_baywang.mp3"></audio>
-      </div>
+    </div>
   </footer>
 
   <script>
-    let isPlaying = false;
-    const song = document.getElementById('song');
-    const button = document.querySelector('button i');
+let isPlaying = false;
+const song = document.getElementById('song');
+const button = document.querySelector('button i');
 
-    function playSong() {
-        if (!isPlaying) {
-            song.currentTime = 0;
-            song.play();
-            button.classList.remove('bi-play');
-            button.classList.add('bi-pause');
-        } else {
-            song.pause();
-            song.currentTime = 0;
-            button.classList.remove('bi-pause');
-            button.classList.add('bi-play');
-        }
+function playSong() {
+    if (!isPlaying) {
+        song.style.display = "block";
+        song.currentTime = 2.5;
+        song.play();
 
-        isPlaying = !isPlaying;
+        button.classList.remove('bi-play');
+        button.classList.add('bi-pause');
+    } else {
+        song.pause();
+        song.currentTime = 0;
+        song.style.display = "none";
+
+        button.classList.remove('bi-pause');
+        button.classList.add('bi-play');
     }
-    </script>
+
+    isPlaying = !isPlaying;
+}
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
-
 
