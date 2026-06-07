@@ -1,434 +1,475 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KDG</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</head>
-<body>
-  <header>
-    <h1>FOR KDG</h1>
-    <nav>
-      <a href="#about">ABOUT</a>
-      <a href="#container">PHOTOS</a>
-      <a href="#letter">LETTERS</a>
-    </nav>
-  </header>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KDG</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <h1>FOR KDG</h1>
+      <nav>
+        <a href="#about">ABOUT</a>
+        <a href="#container">PHOTOS</a>
+        <a href="#letter">LETTERS</a>
+      </nav>
+    </header>
 
-  <main>
-    <img src="pictures/background2-removebg-preview.png" alt="Char and Kezi holding hands">
-  </main>
+    <main>
+      <img src="pictures/background2-removebg-preview.png" alt="Char and Kezi holding hands">
+    </main>
 
 
-  <div id="about" class="about">
-    <div class="title">
-      ABOUT<br>KEZIAH
-    </div>
-    <div class="card" id="aboutkeziah">
-      <p>If I were to describe Keziah in one sentence, I'd say she's like a breath of fresh air—just the thought of them can make you smile even when you're doing nothing.</p>
-      <p>I know I haven't been with them personally, but I do know that she can make the people around them laugh—because that's exactly what she's been doing to me.</p>
-      <p>She's funny, kind, cute, smart, pretty, caring, loyal, beautiful, and mean to me in a good way.</p>
-    </div>
-  </div>
-
-   <h2 class="gallery-title">KDG’s Gallery <i class="bi bi-camera-fill"></i></h2>
-  <div id="container" class="container">
-    <img src="pictures/5.jpg">
-    <img src="pictures/2.jpg">
-    <img src="pictures/3.jpg">
-    <img src="pictures/4.jpg">
-    <img src="pictures/1.jpg">
-    <img src="pictures/7.jpg">
-    <img src="pictures/6.jpg">
-    <img src="pictures/8.jpg">
-  </div>
-  <div class="baby-gallery-title">
-    <h1>Still have that same smile, Mahal ko:></h1>
-    <p>(tap each photo)</p>
-  </div>
-  <div class="baby-gallery">
-  <div class="flip-card" id="flip1" onclick="flipCard('flip1')">
-    <img src="pictures/Front-Image1.jpg" class="front">
-    <img src="pictures/Back-Image1.jpg" class="back">
-  </div>
-  <div class="flip-card" id="flip2" onclick="flipCard('flip2')">
-    <img src="pictures/Front-Image2.jpg" class="front">
-    <img src="pictures/Back-Image2.jpg" class="back">
-  </div>
-  <div class="flip-card" id="flip3" onclick="flipCard('flip3')">
-    <img src="pictures/Front-Image3.jpg" class="front">
-    <img src="pictures/Back-Image3.jpg" class="back">
-  </div>
-  <div class="flip-card" id="flip4" onclick="flipCard('flip4')">
-    <img src="pictures/Front-Image4.jpg" class="front">
-    <img src="pictures/Back-Image4.jpg" class="back">
-  </div>
-  <div class="flip-card" id="flip5" onclick="flipCard('flip5')">
-    <img src="pictures/Front-Image5.jpg" class="front">
-    <img src="pictures/Back-Image5.jpg" class="back">
-  </div>
-  <div class="flip-card" id="flip6" onclick="flipCard('flip6')">
-    <img src="pictures/Front-Image6.jpg" class="front">
-    <img src="pictures/Back-Image6.jpg" class="back">
-  </div>
-  <div class="flip-card" id="flip7" onclick="flipCard('flip7')">
-    <img src="pictures/Front-Image7.jpg" class="front">
-    <img src="pictures/Back-Image7.jpg" class="back">
-  </div>
-  <div class="flip-card" id="flip8" onclick="flipCard('flip8')">
-    <img src="pictures/Front-Image8.jpg" class="front">
-    <img src="pictures/Back-Image8.jpg" class="back">
-  </div>
-</div>
-
-<script>
-function flipCard(id) {
-  document.getElementById(id).classList.toggle('flipped');
-}
-</script>
-
-<div class="notes-title">
-    <h1>Little Notes <i class="bi bi-pencil"></i></h1>
-  </div>
-
-<div class="notes-layout">
-<div class="card mb-3">
-  <div class="row g-0" >
-    <div class="col-4">
-      <img src="pictures/note1.jpg" class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col-8">
-      <div class="card-body">
-        <p class="card-text">One of my fav moments, when we were watching together and giving each other lots of cute kisses.</p>
+    <div id="about" class="about">
+      <div class="title">
+        ABOUT<br>KEZIAH
+      </div>
+      <div class="card" id="aboutkeziah">
+        <p>If I were to describe Keziah in one sentence, I'd say she's like a breath of fresh air—just the thought of them can make you smile even when you're doing nothing.</p>
+        <p>I know I haven't been with them personally, but I do know that she can make the people around them laugh—because that's exactly what she's been doing to me.</p>
+        <p>She's funny, kind, cute, smart, pretty, caring, loyal, beautiful, and mean to me in a good way.</p>
       </div>
     </div>
-  </div>
-</div>
 
-
-<div class="card mb-3">
-  <div class="row g-0">
-    <div class="col-4">
-      <img src="pictures/note2.jpg" class="img-fluid rounded-start" alt="...">
+    <h2 class="gallery-title">KDG’s Gallery <i class="bi bi-camera-fill"></i></h2>
+    <div id="container" class="container">
+      <img src="pictures/5.jpg">
+      <img src="pictures/2.jpg">
+      <img src="pictures/3.jpg">
+      <img src="pictures/4.jpg">
+      <img src="pictures/1.jpg">
+      <img src="pictures/7.jpg">
+      <img src="pictures/6.jpg">
+      <img src="pictures/8.jpg">
     </div>
-    <div class="col-8">
-      <div class="card-body">
-        <p class="card-text">I’ll never get tired of seeing you smile, laugh, and giggle.(You have the prettiest smile I’ve ever seen.)</p>
-      </div>
+    <div class="baby-gallery-title">
+      <h1>Still have that same smile, Mahal ko:></h1>
+      <p>(tap each photo)</p>
     </div>
-  </div>
-</div>
-
-<div class="card mb-3">
-  <div class="row g-0">
-    <div class="col-4">
-      <img src="pictures/note3.jpg" class="img-fluid rounded-start" alt="...">
+    <div class="baby-gallery">
+    <div class="flip-card" id="flip1" onclick="flipCard('flip1')">
+      <img src="pictures/Front-Image1.jpg" class="front">
+      <img src="pictures/Back-Image1.jpg" class="back">
     </div>
-    <div class="col-8">
-      <div class="card-body">
-        <p class="card-text">Someday, going home won’t make me cry—because you’ll be there waiting for me.</p>
-      </div>
+    <div class="flip-card" id="flip2" onclick="flipCard('flip2')">
+      <img src="pictures/Front-Image2.jpg" class="front">
+      <img src="pictures/Back-Image2.jpg" class="back">
     </div>
-  </div>
-</div>
-
-<div class="card mb-3">
-  <div class="row g-0">
-    <div class="col-4">
-      <img src="pictures/note4.jpg" class="img-fluid rounded-start" alt="...">
+    <div class="flip-card" id="flip3" onclick="flipCard('flip3')">
+      <img src="pictures/Front-Image3.jpg" class="front">
+      <img src="pictures/Back-Image3.jpg" class="back">
     </div>
-    <div class="col-8">
-      <div class="card-body">
-        <p class="card-text">Crazy how an IT student can not use her phone for few days.</p>
-      </div>
+    <div class="flip-card" id="flip4" onclick="flipCard('flip4')">
+      <img src="pictures/Front-Image4.jpg" class="front">
+      <img src="pictures/Back-Image4.jpg" class="back">
     </div>
-  </div>
-</div>
-
-<div class="card mb-3">
-  <div class="row g-0">
-    <div class="col-4">
-      <img src="pictures/note5.jpg" class="img-fluid rounded-start" alt="...">
+    <div class="flip-card" id="flip5" onclick="flipCard('flip5')">
+      <img src="pictures/Front-Image5.jpg" class="front">
+      <img src="pictures/Back-Image5.jpg" class="back">
     </div>
-    <div class="col-8">
-      <div class="card-body">
-        <p class="card-text">NAKAIN KO NA RIN SAMOSA!!! masarap lalo na :>></p>
-      </div>
+    <div class="flip-card" id="flip6" onclick="flipCard('flip6')">
+      <img src="pictures/Front-Image6.jpg" class="front">
+      <img src="pictures/Back-Image6.jpg" class="back">
+    </div>
+    <div class="flip-card" id="flip7" onclick="flipCard('flip7')">
+      <img src="pictures/Front-Image7.jpg" class="front">
+      <img src="pictures/Back-Image7.jpg" class="back">
+    </div>
+    <div class="flip-card" id="flip8" onclick="flipCard('flip8')">
+      <img src="pictures/Front-Image8.jpg" class="front">
+      <img src="pictures/Back-Image8.jpg" class="back">
     </div>
   </div>
-</div>
-
-<div class="card mb-3">
-  <div class="row g-0">
-    <div class="col-4">
-      <img src="pictures/note6.jpg" class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col-8">
-      <div class="card-body">
-        <p class="card-text">Make up nya raw ako <br> Me: What my baby wants, my baby gets!</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="card mb-3">
-  <div class="row g-0">
-    <div class="col-4">
-      <img src="pictures/note8.jpg" class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col-8">
-      <div class="card-body">
-        <p class="card-text">Magkakasama na kayo, alagaan nyo mommy iah nyo ah yakapin nyo tuwing gabi, tuwing naiyak o malungkot, kayo muna patahan sakanya kasi wala me para magawa sakanya, antayin nyo ko bumalik haa mahal na mahal ko kayo</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="card mb-3">
-  <div class="row g-0">
-    <div class="col-4">
-      <img src="pictures/note7.jpg" class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col-8">
-      <div class="card-body">
-        <p class="card-text">Uwi na kami:<< kahit dumoble doble pa byahe ko makasama lang kita ng ilan pang oras bal<br><br><br>kita ko dagat kasama ka:> gala la!!</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-</div>
-
-
-
-  <div>
-    <h2 class="gallery-title">LETTERS <i class="bi bi-envelope-paper-heart-fill"></i></h2>
-  </div>
-  <div class="letter-layout">
-     <div id="letter" class="letter-container">
-        <div class="love-title">For My Wabi</div>
-            <div class="letter-text"> 
-Dear Keziah,                                                       
-
-I just want to say—you’re honestly the most caring person I’ve ever met. I love how you are with me, with your friends, and with your sister. Just from your stories alone, I know you deserve someone who’s soft and gentle with you… and I want you to know that I’ll always be that person.
-I love your smile.
-I love your laugh.
-I love your personality.
-I love your endless kwentos.
-And yes, even when you’re “mean” to me—I still love it, Because I know that’s your way of showing you care.
-
-From the person you claim to hate with your whole heart, 
-Seb.
-💗
-
-05/07/25
-            </div>
-     </div>
-  
-    <div id="letter" class="letter-container">
-        <div class="love-title">For My Wabi</div>
-            <div class="letter-text"> 
-Dear Keziah,                                                      
-      
-When I met you, I wasn’t looking for love—just someone to have fun with. But I’m so grateful that what we had turned into something more. We started liking each other, saying “I love you,” making each other laugh, and bringing smiles to each other’s faces.
-
-I never thought I’d find someone as weird and freaky as me—and honestly, that makes me incredibly happy.
-
-It might take months, maybe even years, before we can finally be together in person. But I know it’ll be worth every second—because it’s you. I may not be able to be there physically right now, but please know that I’m always here... just one call away.  
-
-From your favorite kupal, 
-Seb.
-💗
-
-09/07/25
-            </div>
-      </div>
-  
-  <div id="letter" class="letter-container">
-    <div class="love-title">For My Wabi</div>
-      <div class="letter-text"> 
-Dear Keziah,
-      
-I want you to know that there’s no one else I want to be with, talk to, call, play with, or imagine my future with. And most of all, there’s no one else I’d rather annoy and make suyo to every single day. I can’t imagine a future without you by my side—crying, smiling, or laughing. Your voice is the one I want to hear every single day.
-      
-When I saw the dates in the story you made to introduce me, I knew right away—19 was the perfect day to say yes.
-      
-05.19.25 – the day I messaged you
-06.19.25 – the day you asked me if I liked you
-07.19.25 – the day I’m proud to say that
-<i>Keziah De Guzman</i> is my girlfriend.
-      
-From your girlfriend,
-Seb
-💗
-
-19/07/25
-    </div>
-  </div>
-
-  <div id="letter" class="letter-container">
-    <div class="love-title">For My Wabi</div>
-    <div class="letter-text"> 
-I remember when you told me that you seek validation from others about whether you're pretty or not when you go out. I want to change that mindset of yours—just like how you helped me change my mindset about letting people care.
-
-You're very beautiful, inside and out. You have this incredibly attractive smile that always gets to me and somehow always manages to leave me in awe. Do you know how much I love hearing you laugh? Because every time you do, I can feel you smiling. I might not see it, but i’m contented at the thought of u smiling.
-
-And I hope you know that u being pretty isn't just about the physical. It's also about your heart, your mindset, how you think things through, and how you help the people around you—just like how you're helping your kuya. I find everything you do beautiful. every compliment I gave you wasn’t just to make you feel good—they’re all true, and I meant every one of them.
-
-You deserve all the love, kindness, and good things in this world. And for you, I'll never stop trying to give it all.
-
-Malas nila, wala silang Keziah na meron ako. At hinding-hindi kita ipapatalo.
-      
-From your girlfriend,
-Seb
-💗
-
-06/08/25
-    </div>
-  </div>
-
-    <div id="letter" class="letter-container">
-    <div class="love-title">For My Wabi</div>
-    <div class="letter-text"> 
-ang ganda mo pag kagising, 
-ang ganda ng pilikmata mo, 
-ang ganda ng mata mo.
-
-I don’t mind waking up first just to call and see you as you wake up. I could stare at you all day and never get tired. I really, really, really love looking at you—even when you’re not doing anything.
-
-And one more thing—I love the way your eyes and cheeks form when you smile, instant tiklop talaga. I hope you know how much your smile means to me. I love teasing you in a good way because it makes me see that precious smile. Please don’t stop smiling, and if you do, I’ll make sure it comes back.
-
-YOU are the best part of my mornings, keziah ko.
-
-From your girlfriend,
-Seb
-💗
-
-10/09/25
-    </div>
-  </div>
-
-  <div id="letter" class="letter-container">
-    <div class="love-title">For My Wabi</div>
-    <div class="letter-text"> 
-For someone who’s been independent, doesn’t like to show emotions, and finds it hard to cry, I found myself letting my walls down when I’m with you. I can depend on you without feeling like a burden because you never make me feel like one. It really surprised me how easily my tears fell when I left. Maybe it’s because, after being used to not needing anyone, this is the first time I can truly say there’s a person that I need — and it’s you, Keziah ko.
-
-I need you, I want you, I love you. The peace I’ve always been searching for, I found it by being with you. No matter what misunderstandings we may have, I’ll always find comfort in your voice and presence.
-
-Those three days and two nights that I spent with you is very special to me. I loved being able to hug you, kiss you, walk with you, and spend my mornings and nights with you.
-
-Lastly, I hope you know how much I appreciate you — from the moment we met, you cared for me even without knowing me that well. That alone shows what kind of person you are — a person who is beautiful inside and out.
-
-From your girlfriend,
-Seb
-💗
-
-01/11/25
-    </div>
-  </div>
-  <div id="letter" class="letter-container">
-    <div class="love-title">For My Wabi</div>
-    <div class="letter-text"> 
-Happy motmot, mahal ko.
-
-Seven months ago simula nung nakilala kita, sobrang saya at napaka-swerte ko na meron akong ikaw. yes, five months pa lang tayo, pero counted na ’yung dalawang buwan kasi thankful na ako noon na may nakilala akong tulad mo. I don’t think na may mahahanap pa akong kakanta ng you’ll be in my heart ng 9:48 PM at magpapakilala na sya si niki, o kakausapin pa rin ako kahit bwisit na bwisit na sa kakupalan ko. Maybe hindi lang kita kinukupal noon dahil ganon ako, but because gusto ko ng pansin mo. Nabubuo araw ko tuwing nasa akin ang attention mo.
-
-Naalala ko nung sinend mo sa’kin ’yung account mo na puno ng mga sulat mo. Sobrang na-amaze ako sa’yo noon na kahit hindi pa tayo ganon katagal magkakilala, gusto ko na ring magawan mo ako. dahil ang ganda ng way mo sa pag-deliver ng bawat linya.
-
-Alam mo ba, tuwing saan man ako mapunta at may nakikita akong mga bulaklak sa daan, I’m always hoping to find kalachuchi. Naalala ko kasi sabi mo kahit petal lang, gusto mo—“naka-preserve pa yan” Kaya gusto kong makapitas para maibigay sa’yo.
-
-Para kang kalachuchi—mahirap hanapin, pero once na mahanap na, I bet kung sino man makahanap, they’ll feel lucky. Because that’s how I feel. You are my kalachuchi, and I’m very lucky to have found you.
-
-From Pinakaswerteng Tao,
-Seb
-💗
-
-19/12/25
-    </div>
-  </div>
-  <div id="letter" class="letter-container">
-    <div class="love-title">For My Wabi</div>
-    <div class="letter-text"> 
-Happy Valentine’s, Iah ko.
-
-I’m both sad and happy — sad that I can’t be with you on this day, but happy that I have someone like you every day.
-
-If I could describe you as one of our objects in programming, you would be index 0 in my array. An array is where we store a list, and the index is how we access what’s inside it. So if I have a list of: who’s my favorite person, who I love, who I miss, who I want to spend all the holidays and celebrations with, who I want to marry, who I want to see and hear every day, who I think is amazing, who I think is doing their best every day, and who I’m super duper proud of — there would only be one element inside, and the index of the first element is always 0. You are my index 0 to all those questions. You will always be at the top of my list.
-
-Let’s spend a late Valentine’s together when I get back, mahal.
-I love you so much.
-
-From your always Valentine,
-Seb
-💗
-
-14/02/26
-    </div>
-  </div>
-
-  <div id="letter" class="letter-container">
-    <div class="love-title">For My Wabi</div>
-    <div class="letter-text"> 
-Hi my baby, ilang days na lang makakabalik na ako. I’ll finally be able to hug you, kiss you, and take care of you again, I’m sososo happy na mabibigyan ulit ako ng chance to do all of that—and this time, hindi lang for 3d2n, but for 6d5n.
-
-Hindi pa nga ako nakakapunta, pero nasasad na agad ako pag iniisip kong aalis din ako after spending 6 whole days with you. I’m also sad na hindi tayo aabot sa motmot natin, but it’s okay—we’ll celebrate it when we’re together. After all, every day feels like our motmot naman, even on the days na hindi tayo okay, because I still feel like I’m the luckiest person na napili mong makasama, maalagaan ka, at mapagsabihan mo ng mga bagay-bagay.
-
-I hope you’re always okay, mahal. And even if hindi ka okay, I want you to know that I’m always here, ready to listen. Sa dami ng rants at kwento na nasabi mo sa akin, ni isa never kong winish na mag-stop ka. In fact, mas hinihiling ko pa na sana hindi ka tumigil magsabi sa akin. Your voice brings me so much comfort, more than you know.
-
-Lastly, I’m so proud of you. I see your efforts, I see how you’ve changed, and I see how you’re taking your time to learn. That’s why I mean all of my “I’m proud of you” sa’yo—because they’re not just something I say to ease your mind, but to make sure you always know that there’s someone who sees what you’ve done, even when you feel like you didn’t do well.
-
-Goodluck sa exam mo, mahal!! I'm already proud of u.
-
-From your biggest supporter,
-Seb & Momay 💗
-
-09/04/26
-
-    </div>
-  </div>
-
-  </div>
-
-  <footer>
-    <div>
-        <button onclick="playSong()" class="btn btn-lg music-btn">
-            <i class="bi bi-play"></i>
-        </button>
-        <audio id="song" src="/Music/ang_balikat_at_baywang.mp3"></audio>
-    </div>
-  </footer>
 
   <script>
-let isPlaying = false;
-const song = document.getElementById('song');
-const button = document.querySelector('button i');
+  function flipCard(id) {
+    document.getElementById(id).classList.toggle('flipped');
+  }
+  </script>
 
-function playSong() {
-    if (!isPlaying) {
-        song.style.display = "block";
-        song.currentTime = 2.5;
-        song.play();
+  <div class="notes-title">
+      <h1>Little Notes <i class="bi bi-pencil"></i></h1>
+    </div>
 
-        button.classList.remove('bi-play');
-        button.classList.add('bi-pause');
-    } else {
-        song.pause();
-        song.currentTime = 0;
-        song.style.display = "none";
+  <div class="notes-layout">
+  <div class="card mb-3">
+    <div class="row g-0" >
+      <div class="col-4">
+        <img src="pictures/note1.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-8">
+        <div class="card-body">
+          <p class="card-text">One of my fav moments, when we were watching together and giving each other lots of cute kisses.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        button.classList.remove('bi-pause');
-        button.classList.add('bi-play');
-    }
 
-    isPlaying = !isPlaying;
-}
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html>
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-4">
+        <img src="pictures/note2.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-8">
+        <div class="card-body">
+          <p class="card-text">I’ll never get tired of seeing you smile, laugh, and giggle.(You have the prettiest smile I’ve ever seen.)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-4">
+        <img src="pictures/note3.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-8">
+        <div class="card-body">
+          <p class="card-text">Someday, going home won’t make me cry—because you’ll be there waiting for me.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-4">
+        <img src="pictures/note4.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-8">
+        <div class="card-body">
+          <p class="card-text">Crazy how an IT student can not use her phone for few days.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-4">
+        <img src="pictures/note5.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-8">
+        <div class="card-body">
+          <p class="card-text">NAKAIN KO NA RIN SAMOSA!!! masarap lalo na :>></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-4">
+        <img src="pictures/note6.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-8">
+        <div class="card-body">
+          <p class="card-text">Make up nya raw ako <br> Me: What my baby wants, my baby gets!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-4">
+        <img src="pictures/note8.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-8">
+        <div class="card-body">
+          <p class="card-text">Magkakasama na kayo, alagaan nyo mommy iah nyo ah yakapin nyo tuwing gabi, tuwing naiyak o malungkot, kayo muna patahan sakanya kasi wala me para magawa sakanya, antayin nyo ko bumalik haa mahal na mahal ko kayo</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-4">
+        <img src="pictures/note7.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-8">
+        <div class="card-body">
+          <p class="card-text">Uwi na kami:<< kahit dumoble doble pa byahe ko makasama lang kita ng ilan pang oras bal<br><br><br>kita ko dagat kasama ka:> gala la!!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-4">
+        <img src="pictures/note9.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-8">
+        <div class="card-body">
+          <p class="card-text">Tara party (legends lang nakakaalam) </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-4">
+        <img src="pictures/note10.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-8">
+        <div class="card-body">
+          <p class="card-text">Tinakot namin, Nginitaan naman kami hmph!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+
+
+    <div>
+      <h2 class="gallery-title">LETTERS <i class="bi bi-envelope-paper-heart-fill"></i></h2>
+    </div>
+    <div class="letter-layout">
+      <div id="letter" class="letter-container">
+          <div class="love-title">For My Wabi</div>
+              <div class="letter-text"> 
+  Dear Keziah,                                                       
+
+  I just want to say—you’re honestly the most caring person I’ve ever met. I love how you are with me, with your friends, and with your sister. Just from your stories alone, I know you deserve someone who’s soft and gentle with you… and I want you to know that I’ll always be that person.
+  I love your smile.
+  I love your laugh.
+  I love your personality.
+  I love your endless kwentos.
+  And yes, even when you’re “mean” to me—I still love it, Because I know that’s your way of showing you care.
+
+  From the person you claim to hate with your whole heart, 
+  Seb.
+  💗
+
+  05/07/25
+              </div>
+      </div>
+    
+      <div id="letter" class="letter-container">
+          <div class="love-title">For My Wabi</div>
+              <div class="letter-text"> 
+  Dear Keziah,                                                      
+        
+  When I met you, I wasn’t looking for love—just someone to have fun with. But I’m so grateful that what we had turned into something more. We started liking each other, saying “I love you,” making each other laugh, and bringing smiles to each other’s faces.
+
+  I never thought I’d find someone as weird and freaky as me—and honestly, that makes me incredibly happy.
+
+  It might take months, maybe even years, before we can finally be together in person. But I know it’ll be worth every second—because it’s you. I may not be able to be there physically right now, but please know that I’m always here... just one call away.  
+
+  From your favorite kupal, 
+  Seb.
+  💗
+
+  09/07/25
+              </div>
+        </div>
+    
+    <div id="letter" class="letter-container">
+      <div class="love-title">For My Wabi</div>
+        <div class="letter-text"> 
+  Dear Keziah,
+        
+  I want you to know that there’s no one else I want to be with, talk to, call, play with, or imagine my future with. And most of all, there’s no one else I’d rather annoy and make suyo to every single day. I can’t imagine a future without you by my side—crying, smiling, or laughing. Your voice is the one I want to hear every single day.
+        
+  When I saw the dates in the story you made to introduce me, I knew right away—19 was the perfect day to say yes.
+        
+  05.19.25 – the day I messaged you
+  06.19.25 – the day you asked me if I liked you
+  07.19.25 – the day I’m proud to say that
+  <i>Keziah De Guzman</i> is my girlfriend.
+        
+  From your girlfriend,
+  Seb
+  💗
+
+  19/07/25
+      </div>
+    </div>
+
+    <div id="letter" class="letter-container">
+      <div class="love-title">For My Wabi</div>
+      <div class="letter-text"> 
+  I remember when you told me that you seek validation from others about whether you're pretty or not when you go out. I want to change that mindset of yours—just like how you helped me change my mindset about letting people care.
+
+  You're very beautiful, inside and out. You have this incredibly attractive smile that always gets to me and somehow always manages to leave me in awe. Do you know how much I love hearing you laugh? Because every time you do, I can feel you smiling. I might not see it, but i’m contented at the thought of u smiling.
+
+  And I hope you know that u being pretty isn't just about the physical. It's also about your heart, your mindset, how you think things through, and how you help the people around you—just like how you're helping your kuya. I find everything you do beautiful. every compliment I gave you wasn’t just to make you feel good—they’re all true, and I meant every one of them.
+
+  You deserve all the love, kindness, and good things in this world. And for you, I'll never stop trying to give it all.
+
+  Malas nila, wala silang Keziah na meron ako. At hinding-hindi kita ipapatalo.
+        
+  From your girlfriend,
+  Seb
+  💗
+
+  06/08/25
+      </div>
+    </div>
+
+      <div id="letter" class="letter-container">
+      <div class="love-title">For My Wabi</div>
+      <div class="letter-text"> 
+  ang ganda mo pag kagising, 
+  ang ganda ng pilikmata mo, 
+  ang ganda ng mata mo.
+
+  I don’t mind waking up first just to call and see you as you wake up. I could stare at you all day and never get tired. I really, really, really love looking at you—even when you’re not doing anything.
+
+  And one more thing—I love the way your eyes and cheeks form when you smile, instant tiklop talaga. I hope you know how much your smile means to me. I love teasing you in a good way because it makes me see that precious smile. Please don’t stop smiling, and if you do, I’ll make sure it comes back.
+
+  YOU are the best part of my mornings, keziah ko.
+
+  From your girlfriend,
+  Seb
+  💗
+
+  10/09/25
+      </div>
+    </div>
+
+    <div id="letter" class="letter-container">
+      <div class="love-title">For My Wabi</div>
+      <div class="letter-text"> 
+  For someone who’s been independent, doesn’t like to show emotions, and finds it hard to cry, I found myself letting my walls down when I’m with you. I can depend on you without feeling like a burden because you never make me feel like one. It really surprised me how easily my tears fell when I left. Maybe it’s because, after being used to not needing anyone, this is the first time I can truly say there’s a person that I need — and it’s you, Keziah ko.
+
+  I need you, I want you, I love you. The peace I’ve always been searching for, I found it by being with you. No matter what misunderstandings we may have, I’ll always find comfort in your voice and presence.
+
+  Those three days and two nights that I spent with you is very special to me. I loved being able to hug you, kiss you, walk with you, and spend my mornings and nights with you.
+
+  Lastly, I hope you know how much I appreciate you — from the moment we met, you cared for me even without knowing me that well. That alone shows what kind of person you are — a person who is beautiful inside and out.
+
+  From your girlfriend,
+  Seb
+  💗
+
+  01/11/25
+      </div>
+    </div>
+    <div id="letter" class="letter-container">
+      <div class="love-title">For My Wabi</div>
+      <div class="letter-text"> 
+  Happy motmot, mahal ko.
+
+  Seven months ago simula nung nakilala kita, sobrang saya at napaka-swerte ko na meron akong ikaw. yes, five months pa lang tayo, pero counted na ’yung dalawang buwan kasi thankful na ako noon na may nakilala akong tulad mo. I don’t think na may mahahanap pa akong kakanta ng you’ll be in my heart ng 9:48 PM at magpapakilala na sya si niki, o kakausapin pa rin ako kahit bwisit na bwisit na sa kakupalan ko. Maybe hindi lang kita kinukupal noon dahil ganon ako, but because gusto ko ng pansin mo. Nabubuo araw ko tuwing nasa akin ang attention mo.
+
+  Naalala ko nung sinend mo sa’kin ’yung account mo na puno ng mga sulat mo. Sobrang na-amaze ako sa’yo noon na kahit hindi pa tayo ganon katagal magkakilala, gusto ko na ring magawan mo ako. dahil ang ganda ng way mo sa pag-deliver ng bawat linya.
+
+  Alam mo ba, tuwing saan man ako mapunta at may nakikita akong mga bulaklak sa daan, I’m always hoping to find kalachuchi. Naalala ko kasi sabi mo kahit petal lang, gusto mo—“naka-preserve pa yan” Kaya gusto kong makapitas para maibigay sa’yo.
+
+  Para kang kalachuchi—mahirap hanapin, pero once na mahanap na, I bet kung sino man makahanap, they’ll feel lucky. Because that’s how I feel. You are my kalachuchi, and I’m very lucky to have found you.
+
+  From Pinakaswerteng Tao,
+  Seb
+  💗
+
+  19/12/25
+      </div>
+    </div>
+    <div id="letter" class="letter-container">
+      <div class="love-title">For My Wabi</div>
+      <div class="letter-text"> 
+  Happy Valentine’s, Iah ko.
+
+  I’m both sad and happy — sad that I can’t be with you on this day, but happy that I have someone like you every day.
+
+  If I could describe you as one of our objects in programming, you would be index 0 in my array. An array is where we store a list, and the index is how we access what’s inside it. So if I have a list of: who’s my favorite person, who I love, who I miss, who I want to spend all the holidays and celebrations with, who I want to marry, who I want to see and hear every day, who I think is amazing, who I think is doing their best every day, and who I’m super duper proud of — there would only be one element inside, and the index of the first element is always 0. You are my index 0 to all those questions. You will always be at the top of my list.
+
+  Let’s spend a late Valentine’s together when I get back, mahal.
+  I love you so much.
+
+  From your always Valentine,
+  Seb
+  💗
+
+  14/02/26
+      </div>
+    </div>
+
+    <div id="letter" class="letter-container">
+      <div class="love-title">For My Wabi</div>
+      <div class="letter-text"> 
+  Hi my baby, ilang days na lang makakabalik na ako. I’ll finally be able to hug you, kiss you, and take care of you again, I’m sososo happy na mabibigyan ulit ako ng chance to do all of that—and this time, hindi lang for 3d2n, but for 6d5n.
+
+  Hindi pa nga ako nakakapunta, pero nasasad na agad ako pag iniisip kong aalis din ako after spending 6 whole days with you. I’m also sad na hindi tayo aabot sa motmot natin, but it’s okay—we’ll celebrate it when we’re together. After all, every day feels like our motmot naman, even on the days na hindi tayo okay, because I still feel like I’m the luckiest person na napili mong makasama, maalagaan ka, at mapagsabihan mo ng mga bagay-bagay.
+
+  I hope you’re always okay, mahal. And even if hindi ka okay, I want you to know that I’m always here, ready to listen. Sa dami ng rants at kwento na nasabi mo sa akin, ni isa never kong winish na mag-stop ka. In fact, mas hinihiling ko pa na sana hindi ka tumigil magsabi sa akin. Your voice brings me so much comfort, more than you know.
+
+  Lastly, I’m so proud of you. I see your efforts, I see how you’ve changed, and I see how you’re taking your time to learn. That’s why I mean all of my “I’m proud of you” sa’yo—because they’re not just something I say to ease your mind, but to make sure you always know that there’s someone who sees what you’ve done, even when you feel like you didn’t do well.
+
+  Goodluck sa exam mo, mahal!! I'm already proud of u.
+
+  From your biggest supporter,
+  Seb & Momay 💗
+
+  09/04/26
+
+      </div>
+    </div>
+
+    <div id="letter" class="letter-container">
+      <div class="love-title">For My Wabi</div>
+      <div class="letter-text"> 
+Hi babal koo, I hope you know na sobrang, sobrang miss kita, lalo na kasi papasok ka na ulit. :< But izokeii, hihintayin kita always, hihi.
+
+Tenchu for spending your bakasyon wid me, mahal. Saglit lang bakasyon nyo pero halos lahat ng oras kasama mo ako:<< Tenchu, baby. I hope you enjoyed it as much as I did. Sobrang na-appreciate ko yon, baby, and I hope nakapagpahinga ka kahit papaano kasi sobrang deserve mo makapagpahinga pagkatapos lahat ng buwan na halos review.
+
+Tandaan mo, sobrang proud na proud ako sayo, mahal. Malapit mo na matapos ang first year mo! lang kaba talaga sa kakayahan mo eh kaya mo yang short term nyo baby kaw pa ba
+
+u da best gekko and u da best taga turo sakin ng background ng mga characs sa movie <;) DA BESTTTTT!!!!
+
+Lez play, watch, and call again soon!! I love u sosososoososo much babal;3;3
+      </div>
+    </div>
+
+    </div>
+
+    <footer>
+      <div>
+          <button onclick="playSong()" class="btn btn-lg music-btn">
+              <i class="bi bi-play"></i>
+          </button>
+          <audio id="song" src="/Music/ang_balikat_at_baywang.mp3"></audio>
+      </div>
+    </footer>
+
+    <script>
+  let isPlaying = false;
+  const song = document.getElementById('song');
+  const button = document.querySelector('button i');
+
+  function playSong() {
+      if (!isPlaying) {
+          song.style.display = "block";
+          song.currentTime = 2.5;
+          song.play();
+
+          button.classList.remove('bi-play');
+          button.classList.add('bi-pause');
+      } else {
+          song.pause();
+          song.currentTime = 0;
+          song.style.display = "none";
+
+          button.classList.remove('bi-pause');
+          button.classList.add('bi-play');
+      }
+
+      isPlaying = !isPlaying;
+  }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+  </html>
 
